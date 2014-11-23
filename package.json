@@ -1,11 +1,11 @@
-  {
+{
   "name": "ForSomeone",
   "description": "Just try for something",
   "devDependencies": {
-    "wd": "~0.3.10",
-    "cucumber": "git://github.com/cucumber/cucumber-js.git#master",
+    "wd": "~0.2.6",
+    "cucumber": "latest",
     "grunt": "~0.4.1",
-    "grunt-cucumber": "~0.2.1",
-    "phantomjs": "~1.9.1"
+    "grunt-phantom": "latest",
+    "grunt-cucumber": "~0.2.1"
   }
 }
