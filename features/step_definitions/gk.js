@@ -27,7 +27,7 @@ module.exports = function () {
       if (err) {
         callback.fail();
       } else {
-        el.click();
+//        el.click();
         callback();
       }
    });
