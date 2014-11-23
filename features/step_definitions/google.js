@@ -1,8 +1,8 @@
 module.exports = function () {
   this.World = require('../support/world.js').World;
 
-  this.Given("I am on Google", function(callback) {
-    this.browser.get('http://google.com', callback);
+  this.Given("I am on Gamekapocs", function(callback) {
+    this.browser.get('http://gamekapocs.hu/', callback);
   });
 
   this.When('I search for "$query"', function(query, callback) {
@@ -22,4 +22,14 @@ module.exports = function () {
     }.bind(this));
   });
 
-};
+  this.When("I click on Logo", function(callback) {
+    this.browser.waitForElementByCss('a[class*="logolink"]', 5000, function (err, el){
+      if (err) {
+        callback.fail();
+      } else {
+        el.click();
+        callback();
+      }
+   });
+  });
+}
