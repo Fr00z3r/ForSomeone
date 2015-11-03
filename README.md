@@ -8,6 +8,8 @@ Start phantomjs in command line with 'phantomjs --webdriver=4444'
 Start tests with 'grunt' command
 
 keksz
+
+lukas
 Further improvment:
 
   Automatic phantom start
